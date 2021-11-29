@@ -449,3 +449,13 @@ img{
     right: 10%;
   }
 }
+
+
+
+.card-text{
+  text-align: center;
+}
+
+.card-text1{
+  text-align: left;
+}
