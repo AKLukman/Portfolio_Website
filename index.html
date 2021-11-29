@@ -72,7 +72,7 @@
                 </div>
 
                 <div>
-                    <h2 class="about__subtitle">I'am Marlon</h2>
+                    <h2 class="about__subtitle">I'am Lukman</h2>
                     <p class="about__text">I am Abul Kashem Lukman. I am studying in Computer science and Engineering.
                         So, I have gained basic knowledge from my study. Also, I have gathered vast knowledge about
                         coding, designing, markup languages, and other things that are related to this sector.</p>
@@ -153,7 +153,7 @@
             <div class="work__container bd-grid">
                 <div class="">
                     <div class="work__img">
-                        <img src="assets/img/project1.png" alt="">
+                        <img width="100%" height="200px" src="assets/img/project1.png" alt="">
                     </div>
                     <div class="photo-detail">
                         <h3 class="card-text">Shome Shoes</h3>
@@ -161,10 +161,11 @@
                             We offer different categories of shoes which are very attarctive.
                             This is a relaibale website for any person.</p>
                     </div>
+                    <button>Details</button>
                 </div>
                 <div class="">
                     <div class="work__img">
-                        <img width="200px" height="200px" src="assets/img/project2.png" alt="">
+                        <img src="assets/img/project2.png" alt="">
                     </div>
                     <div class="photo-detail">
                         <h3 class="card-text">Air Ticket</h3>
@@ -172,17 +173,19 @@
                             orders.
                             Users can see different types of services.</p>
                     </div>
+                    <button>Details</button>
                 </div>
                 <div class="">
                     <div class="work__img">
-                        <img src="" alt="">
+                        <img src="assets/img/project3.png" alt="">
                     </div>
                     <div class="photo-detail">
-                        <h3 class="card-text">Shome Shoes</h3>
-                        <p class="card1-text">This a online Shoes Website.
-                            We offer different categories of shoes which are very attarctive.
-                            This is a relaibale website for any person.</p>
+                        <h3 class="card-text">MediPlus</h3>
+                        <p class="card1-text">Thsi website is about medical servic.Users can login with google
+                            signIn.Users can see details of services
+                            Users can see donations.</p>
                     </div>
+                    <button>Details</button>
                 </div>
 
             </div>
@@ -193,11 +196,11 @@
             <h2 class="section-title">Contact</h2>
 
             <div class="contact__container bd-grid">
-                <form action="" class="contact__form">
-                    <input type="text" placeholder="Name" class="contact__input">
-                    <input type="mail" placeholder="Email" class="contact__input">
-                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                    <input type="button" value="Send" class="contact__button button">
+                <form action="javascript:sendmail()" method="post" class="contact__form">
+                    <input type="text" placeholder="Name" id="name" class="contact__input">
+                    <input type="mail" placeholder="Email" id="email" class="contact__input">
+                    <textarea name="" id="desc" cols="0" rows="10" class="contact__input"></textarea>
+                    <input type="submit" value="Send" class="contact__button button">
                 </form>
             </div>
         </section>
@@ -220,6 +223,55 @@
 
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
+
+    <!--===== sendmail JS =====-->
+
+    <script>
+
+        function sendmail() {
+
+            var name = $('#name').val();
+
+            var email = $('#email').val();
+            var desc = $('#desc').val();
+            // var tid = $('#tid').val();
+
+            // var body = $('#body').val();
+
+            var Body = 'Name: ' + name + ' <br>Email: ' + email + '<br>Description: ' + desc;
+            //console.log(name, phone, email, message);
+
+            Email.send({
+                SecureToken: "fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
+                To: 'abulkashemlukman@gmail.com',
+                From: email,
+                Subject: "New message on contact from " + name,
+                Body: Body
+            }).then(
+                message => {
+                    //console.log (message);
+                    if (message == 'OK') {
+                        alert('Your mail has been send. Thank you for connecting.');
+                    }
+                    else {
+                        console.error(message);
+                        alert('There is error at sending message. ')
+
+                    }
+
+                }
+            );
+
+
+
+        }
+
+
+    </script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
 </body>
 
 </html>
