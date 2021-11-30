@@ -27,6 +27,12 @@
   }
 }
 
+.nav__item a{
+  text-decoration: none;
+}
+.head a{
+  text-decoration: none;
+}
 /*===== Margenes =====*/
 :root{
   --mb-1: 0.5rem;
@@ -45,6 +51,12 @@
   --z-fixed: 100;
 }
 
+.tecnology li{
+  list-style: square;
+}
+.home__data a{
+  text-decoration: none;
+}
 /*===== BASE =====*/
 *,::before,::after{
   box-sizing: border-box;
@@ -69,10 +81,18 @@ ul{
 a{
   text-decoration: none;
 }
+.desc-a a{
+  text-decoration: none;
+}
 img{
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+.text-blog{
+  text-align: center;
+  font-size: 50px;
 }
 
 /*===== CLASS CSS ===== */
@@ -147,6 +167,7 @@ img{
   position: relative;
   color: #fff;
 }
+
 .nav__link:hover{
   position: relative;
 }
@@ -198,7 +219,7 @@ img{
 }
 .home__title-color{
   color: var(--first-color);
-  font-size: 40px;
+  font-size: 45px;
 }
 .home__social{
   display: flex;
@@ -218,10 +239,12 @@ img{
   right: 0;
   bottom: 0;
   width: 295px;
+  
 }
 
-/*BUTTONS*/
-.button{
+/*button1S*/
+
+.button1{
   display: inline-block;
   background-color: var(--first-color);
   color: #fff;
@@ -229,7 +252,7 @@ img{
   font-weight: var(--font-semi);
   border-radius: .5rem;
 }
-.button:hover{
+.button1:hover{
   box-shadow: 0 10px 36px rgba(0,0,0,.15);
 }
 
@@ -333,7 +356,7 @@ img{
   outline: none;
   margin-bottom: var(--mb-4);
 }
-.contact__button{
+.contact__button1{
   display: block;
   border: none;
   outline: none;
@@ -379,7 +402,7 @@ img{
     width: 80px;
     top: 3rem;
   }
-
+ 
   .nav{
     height: calc(var(--header-height) + 1rem);
   }
@@ -417,6 +440,7 @@ img{
   .home__img{
     width: 457px;
     bottom: 15%;
+    
   }
 
   .about__container, .skills__container{
@@ -426,6 +450,7 @@ img{
   }
   .about__img img{
     width: 300px;
+   
   }
   .work__container{
     grid-template-columns: repeat(3, 1fr);
@@ -435,9 +460,12 @@ img{
   .contact__form{
     width: 360px;
   }
+  
   .contact__container{
     justify-items: center;
   }
+ 
+  
 }
 
 @media screen and (min-width: 1024px){
@@ -460,7 +488,7 @@ img{
   text-align: left;
 }
 
-button{
+button1{
   display: inline-block;
   background-color: var(--first-color);
   color: #fff;

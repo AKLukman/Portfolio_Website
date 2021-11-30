@@ -9,7 +9,10 @@
 
     <!-- =====BOX ICONS===== -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Abul Kashem Lukman's Portfolio</title>
 </head>
 
@@ -17,16 +20,17 @@
     <!--===== HEADER =====-->
     <header class="l-header">
         <nav class="nav bd-grid">
-            <div>
+            <div class="head">
                 <a href="#" class="nav__logo">Lukman</a>
             </div>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Pojects</a></li>
+                    <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </div>
@@ -41,11 +45,11 @@
         <!--===== HOME =====-->
         <section class="home bd-grid" id="home">
             <div class="home__data">
-                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Abul Kashem Lukman</span><br> Web
+                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Lukman</span><br>Web
                     Developer</h1>
 
                 <a href="https://drive.google.com/file/d/1QBkzm-A5lhFp5SD9l-Ud6F7OrT_anOoq/view?usp=sharing"
-                    class="button" target="_blank">Download Resume</a>
+                    class="button1" target="_blank">Download Resume</a>
             </div>
 
             <div class="home__social">
@@ -72,10 +76,15 @@
                 </div>
 
                 <div>
-                    <h2 class="about__subtitle">I'am Lukman</h2>
-                    <p class="about__text">I am Abul Kashem Lukman. I am studying in Computer science and Engineering.
+                    <h2 class="about__subtitle">I'am Abul Kashem Lukman</h2>
+                    <p class="about__text">I am studying in Computer science and Engineering.
                         So, I have gained basic knowledge from my study. Also, I have gathered vast knowledge about
                         coding, designing, markup languages, and other things that are related to this sector.</p>
+                    <br>
+
+                    <p class="about__text">I am a person who is positive about every aspect of life. There are many
+                        things I like to do, to
+                        see, and to experience. </p>
                 </div>
             </div>
         </section>
@@ -90,6 +99,8 @@
                     <p class="skills__text">My core skill is based on JavaScript and I like to do most of the things
                         using JavaScript. I develop the frontend part of the website, especially using React JavaScript.
                         I have already developed 11 projects with JavaScript and React.js.</p>
+
+
                     <div class="skills__data">
                         <div class="skills__names">
                             <i class='bx bxl-html5 skills__icon'></i>
@@ -128,7 +139,7 @@
                     </div>
                     <div class="skills__data">
                         <div class="skills__names">
-                            <i class='bx bxs-paint skills__icon'></i>
+                            <i class='fab fa-react skills__icon'></i>
                             <span class="skills__name">React</span>
                         </div>
                         <div class="skills__bar skills__ux">
@@ -159,9 +170,9 @@
                         <h3 class="card-text">Shome Shoes</h3>
                         <p class="card1-text">This a online Shoes Website.
                             We offer different categories of shoes which are very attarctive.
-                            This is a relaibale website for any person.</p>
+                        </p>
                     </div>
-                    <button>Details</button>
+                    <button1 data-bs-toggle="modal" data-bs-target="#modal1">Details</button1>
                 </div>
                 <div class="">
                     <div class="work__img">
@@ -173,7 +184,7 @@
                             orders.
                             Users can see different types of services.</p>
                     </div>
-                    <button>Details</button>
+                    <button1 data-bs-toggle="modal" data-bs-target="#modal2">Details</button1>
                 </div>
                 <div class="">
                     <div class="work__img">
@@ -185,11 +196,43 @@
                             signIn.Users can see details of services
                             Users can see donations.</p>
                     </div>
-                    <button>Details</button>
+                    <button1 data-bs-toggle="modal" data-bs-target="#modal3">Details</button1>
+                </div>
+
+                <div class="">
+                    <div class="work__img">
+                        <img src="assets/img/project3.png" alt="">
+                    </div>
+                    <div class="photo-detail">
+                        <h3 class="card-text">MediPlus</h3>
+                        <p class="card1-text">Thsi website is about medical servic.Users can login with google
+                            signIn.Users can see details of services
+                            Users can see donations.</p>
+                    </div>
+                    <button1>Details</button1>
                 </div>
 
             </div>
         </section>
+
+
+        <!--===== Blog =====-->
+        <section class="about section " id="blog">
+            <h2 class="section-title">Blogs</h2>
+
+            <!-- <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/prot.jpg" alt="">
+                </div> -->
+
+            <div>
+                <h1 class="text-blog">Coming soon!</h1>
+
+            </div>
+            </div>
+        </section>
+
+
 
         <!--===== CONTACT =====-->
         <section class="contact section" id="contact">
@@ -200,7 +243,7 @@
                     <input type="text" placeholder="Name" id="name" class="contact__input">
                     <input type="mail" placeholder="Email" id="email" class="contact__input">
                     <textarea name="" id="desc" cols="0" rows="10" class="contact__input"></textarea>
-                    <input type="submit" value="Send" class="contact__button button">
+                    <input type="submit" value="Send" class="contact__button1 button1">
                 </form>
             </div>
         </section>
@@ -216,6 +259,211 @@
         </div>
         <p>&#169; 2021 copyright all right reserved</p>
     </footer>
+
+    <!-- Modal1-->
+    <div class="modal fade" id="modal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Shome Shoes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/img/project1.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/s1.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/s2.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div>
+                        <h3>Description</h3>
+                        <p>Admin can add products and manage all users and orders.
+                            Admin and User’s activities are different in the website.
+                            A user can place an order to get the product , the user can see a list of ordered items and
+                            the user
+                            can delete items.</p>
+                    </div>
+                    <div class="desc-a">
+                        <h3>Technology & Tools</h3>
+                        <ul class="tecnology">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Material UI</li>
+                            <li>JavaScript</li>
+                            <li>NOdeJS</li>
+                            <li>ExpressJS</li>
+                            <li>React</li>
+                            <li>Firebase</li>
+                            <li>MongoDB</li>
+                            <li>Github</li>
+                            <li>Vs Code</li>
+                        </ul>
+                        <a target="blank"
+                            href="https://github.com/programming-hero-web-course-4/niche-website-server-side-AKLukman">Server
+                            Site Code Link</a> <span class="text-danger">|</span>
+                        <a target="blank"
+                            href="https://github.com/programming-hero-web-course-4/niche-website-client-side-AKLukman">
+                            Client Site Code Link</a> <span class="text-danger">|</span>
+                        <a target="blank" href="https://shome-shoes.web.app/home">Live Site</a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal2-->
+    <div class="modal fade" id="modal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Air Ticket</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/img/project2.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/t1.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/t2.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div>
+                        <h3>Description</h3>
+                        <p>Admin can add services and manage all orders.Users can see their own orders.
+                            Users can see different types of services.</p>
+                    </div>
+                    <div class="desc-a">
+                        <h3>Technology & Tools</h3>
+                        <ul class="tecnology">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Bootstrap5</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>ExpressJS</li>
+                            <li>Firebase</li>
+                            <li>Github</li>
+                            <li>Vs Code</li>
+                        </ul>
+                        <a target="blank"
+                            href="https://github.com/programming-hero-web-course1/tourism-or-delivery-website-server-side-AKLukman">Server
+                            Site Code Link</a> <span class="text-danger">|</span>
+                        <a target="blank"
+                            href="https://github.com/programming-hero-web-course1/tourism-or-delivery-website-client-side-AKLukman">
+                            Client Site Code Link</a> <span class="text-danger">|</span>
+                        <a target="blank" href="https://tourism-booking-d7965.web.app/">Live Site</a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal3-->
+    <div class="modal fade" id="modal3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">MediPlus</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/img/project3.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/m1.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/m2.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div>
+                        <h3>Description</h3>
+                        <p>Users can login with google signIn.
+                            Users can see details of services
+                            Users can see donations.</p>
+                    </div>
+                    <div class="desc-a">
+                        <h3>Technology & Tools</h3>
+                        <ul class="tecnology">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Bootstrap5</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>ExpressJS</li>
+                            <li>Firebase</li>
+                            <li>Github</li>
+                            <li>Vs Code</li>
+                        </ul>
+
+                        <a target="blank"
+                            href="https://github.com/Programming-Hero-Web-Course3/healthcare-related-website-AKLukman">
+                            Client Site Code Link</a> <span class="text-danger">|</span>
+                        <a target="blank" href="https://mediplus-e319c.web.app/">Live Site</a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!--===== SCROLL REVEAL =====-->
@@ -271,6 +519,9 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
 </body>
 
