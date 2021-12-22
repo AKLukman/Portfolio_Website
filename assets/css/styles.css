@@ -95,6 +95,20 @@ img{
   font-size: 50px;
 }
 
+
+.blog-title{
+  text-align: center;
+}
+.blog-desc{
+  margin: 0 40px;
+  text-align: justify;
+  font-size: 18px;
+}
+
+.blog-list li{
+  list-style-type: square;
+}
+
 /*===== CLASS CSS ===== */
 .section-title{
   position: relative;
