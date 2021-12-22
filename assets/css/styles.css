@@ -107,8 +107,11 @@ img{
 
 .blog-list li{
   list-style-type: square;
+  margin: 0 40px;
 }
-
+.virtual-dom{
+  margin: 0 40px;
+}
 /*===== CLASS CSS ===== */
 .section-title{
   position: relative;
