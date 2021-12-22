@@ -99,6 +99,9 @@ img{
 .blog-title{
   text-align: center;
 }
+.vd{
+  margin-top: 20px;
+}
 .blog-desc{
   margin: 0 40px;
   text-align: justify;
@@ -110,7 +113,7 @@ img{
   margin: 0 40px;
 }
 .virtual-dom{
-  margin: 0 40px;
+  margin:0 40px;
 }
 /*===== CLASS CSS ===== */
 .section-title{
