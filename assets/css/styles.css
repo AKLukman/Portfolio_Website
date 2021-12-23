@@ -108,6 +108,10 @@ img{
   font-size: 18px;
 }
 
+.blog-margin{
+  margin-top: 40px;
+}
+
 .blog-list li{
   list-style-type: square;
   margin: 0 40px;
